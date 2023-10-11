@@ -1,15 +1,72 @@
-body{
-    background: url(assets/bg-mobile.jpg) no-repeat top center/cover
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#container{    
-    width: 360px;
-    height: 712px;
+body {
+  background: url(assets/bg-mobile.jpg) no-repeat top center/cover;
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 700;
+}
+
+#container {
+  width: 360px;
+  border: 1px solid red;
+  margin: 56px auto 0px;
+}
+
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  width: 112px;
+  border-radius: 50%;
+  border-width: 3px;
+  border-style: solid; 
+  border-color:  white; 
+}
+
+/* links */
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-self: stretch;
+
+}
+
+ul li a{
     border: 1px solid red;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    
+    border-radius: 8px;
+    border: 1px solid var(--stroke-color-dark-mode, rgba(255, 255, 255, 0.50));
+    background: var(--surface-color-dark-mode, rgba(255, 255, 255, 0.10));
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);    
+
+    text-decoration: none;
+    font-weight: 500pc;
+
+    transition: backgroud 0.3s;
+
 }
 
-#profile img{
-    width: 112px;
-    margin: auto;
+/* pseudo-selector */
+ul li a:hover{
+    background: rgba(255, 255, 255, 0.5);
+    border: 1.5px solid white;
 }
